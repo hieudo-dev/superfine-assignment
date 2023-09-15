@@ -11,8 +11,16 @@ export default function FeaturedGames({ games, className }) {
           <div key={game.id} className="card card-compact w-full bg-bluegray">
             <figure>
               <img
-                src={game.thumbnailImageUrl}
-                className="aspect-square object-cover w-full rounded-3xl"
+                src={
+                  game.thumbnailImageUrl ??
+                  "https://img.icons8.com/ios/100/no-image.png"
+                }
+                className={clsx(
+                  "aspect-square object-cover w-full rounded-3xl",
+                  {
+                    "p-28": !game.thumbnailImageUrl,
+                  }
+                )}
                 alt="Shoes"
               />
             </figure>
