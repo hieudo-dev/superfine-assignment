@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 export default function FeaturedJams({ jams, className }) {
   return (
-    <section className={clsx("container mx-auto px-2 lg:px-10", className)}>
+    <section className={clsx("container mx-auto px-4 lg:px-10", className)}>
       <h2 className="text-2xl font-bold ml-2 mb-4 text-gray-200">
         FEATURED JAMS
       </h2>
