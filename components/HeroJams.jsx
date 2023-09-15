@@ -18,7 +18,7 @@ export default function HeroJams({ jams }) {
             key={jam.id}
             href={`#${jam.id}`}
             className={clsx([
-              "btn btn-circle bg-white min-h-0 h-3 w-3 block",
+              "btn border-0 btn-circle min-h-0 h-3 w-3 block",
               current === index ? "bg-gray-100" : "bg-gray-700",
             ])}
             onClick={() => setCurrent(index)}

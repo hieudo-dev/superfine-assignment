@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="sticky w-full top-0 px-4 lg:px-9 py-6 z-10 flex justify-between items-center bg-bluegray">
+    <header className="sticky w-full top-0 px-4 text-gray-300 lg:px-9 py-6 z-10 flex justify-between items-center bg-bluegray">
       <div className="flex basis-1/3 items-center">
         <h1 className="text-2xl text-gray-200 font-extrabold">GAMEJAM</h1>
         <a href="#" className="ml-9 hidden lg:block">
@@ -34,27 +34,19 @@ export default function Header() {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 min-h-full text-lg bg-bluegray">
-            <li>
-              <a>BROWSE GAMES</a>
-            </li>
-            <li>
-              <a>UPLOAD GAMES</a>
-            </li>
-            <li>
-              <a>COMMUNITY</a>
-            </li>
-            <li>
-              <a>SUPPORT</a>
-            </li>
+          <div className="menu p-4 w-80 min-h-full text-lg bg-bluegray">
+            <a className="p-2 cursor-pointer hover:text-gray-400">
+              BROWSE GAMES
+            </a>
+            <a className="p-2 cursor-pointer hover:text-gray-400">
+              UPLOAD GAMES
+            </a>
+            <a className="p-2 cursor-pointer hover:text-gray-400">COMMUNITY</a>
+            <a className="p-2 cursor-pointer hover:text-gray-400">SUPPORT</a>
             <hr className="my-2 opacity-40" />
-            <li>
-              <a>Sign up</a>
-            </li>
-            <li>
-              <a>Log in</a>
-            </li>
-          </ul>
+            <a className="p-2 cursor-pointer hover:text-gray-400">Sign up</a>
+            <a className="p-2 cursor-pointer hover:text-gray-400">Log in</a>
+          </div>
         </div>
       </div>
     </header>

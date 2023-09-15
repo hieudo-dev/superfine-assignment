@@ -24,6 +24,10 @@
     text-decoration: none;
   }
 
+  drawer a:hover {
+    @apply text-gray-400;
+  }
+
   * {
     box-sizing: border-box;
   }

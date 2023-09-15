@@ -26,13 +26,13 @@ export default function FeaturedJams({ jams, className }) {
                   {jam.hostProfiles.map((host) => host.username).join(", ")}
                 </span>
               </p>
-              <p className="italic text-base mb-1">
+              <p className="text-gray-300 italic text-base mb-1">
                 Start in 14 days, 12 hours
               </p>
               <div className="overflow-hidden h-4 relative rounded-xl bg-gray-500 bg-opacity-20">
                 <div className="bg-gradient rounded-xl absolute top-0 bottom-0 left-0 w-1/2"></div>
               </div>
-              <div className="italic text-base">
+              <div className="text-gray-300 italic text-base">
                 <p className="inline-flex mr-4">{jam.joinedCount} Joined</p>
                 <p className="inline-flex">{jam.submissionCount} Submissions</p>
               </div>

@@ -3,7 +3,7 @@ export default function SearchInput() {
     <div className="relative">
       <input
         type="text"
-        className="w-full block lg:w-96 h-12 px-4 py-2 rounded-full bg-bluegray text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+        className="w-full block lg:w-96 h-12 px-4 py-2 rounded-full placeholder:text-gray-300 text-gray-300 bg-bluegray text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
         placeholder="Search"
       />
       <button className="absolute text-white right-3 top-2.5 rounded-full bg-purple p-1">

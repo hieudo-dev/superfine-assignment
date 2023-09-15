@@ -21,6 +21,7 @@ export default function FeaturedGames({ games, className }) {
                     "p-28": !game.thumbnailImageUrl,
                   }
                 )}
+                loading="lazy"
                 alt="Shoes"
               />
             </figure>
@@ -29,7 +30,7 @@ export default function FeaturedGames({ games, className }) {
                 <h2 className="font-bold text-gray-300 mb-0 text-3xl">
                   {game.name}
                 </h2>
-                <div className="badge bg-gray-500 text-gray-200 text-2xl py-4 px-2">
+                <div className="border-0 badge bg-gray-500 text-gray-200 text-2xl py-4 px-2">
                   ${game.price}
                 </div>
               </div>
