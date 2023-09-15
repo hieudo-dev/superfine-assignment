@@ -49,7 +49,7 @@ export default function HeroJamsSlide({ jam }) {
           </span>
         </p>
         <p className="mt-4 text-xl text-gray-300">Starts in</p>
-        <div className="flex flex-wrap justify-center lg:justify-between">
+        <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-between">
           <div className="grid grid-cols-3 mb-5 lg:mb-0">
             <p className="text-4xl text-gray-200">{countdown.days}</p>
             <p className="text-4xl text-gray-200">{countdown.hours}</p>
@@ -65,7 +65,7 @@ export default function HeroJamsSlide({ jam }) {
             <p className="text-xl text-gray-200">Submission</p>
           </div>
         </div>
-        <button className="btn block m-auto bg-gradient no-outline text-gray-100 text-2xl rounded-full mt-8 border-0">
+        <button className="btn block m-auto bg-gradient text-gray-100 text-2xl rounded-full mt-8 border-0">
           JOIN NOW!
         </button>
       </div>

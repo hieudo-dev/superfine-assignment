@@ -9,8 +9,6 @@
 
   html,
   body {
-    -webkit-text-fill-color: currentColor;
-    -webkit-text-stroke: 0.5px black;
     padding: 0;
     margin: 0;
     font-family:
@@ -18,7 +16,7 @@
       Inter,
       -apple-system,
       sans-serif;
-    @apply scroll-pt-[300px];
+    scroll-padding-top: 300px;
   }
 
   a {
@@ -39,8 +37,5 @@
 @layer utilities {
   .bg-gradient {
     background: linear-gradient(90deg, #1991e1 0%, #8764fa 100%);
-  }
-  .no-outline {
-    -webkit-text-stroke: 0;
   }
 }
