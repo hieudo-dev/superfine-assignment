@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply bg-dark;
+  }
+
+  html,
+  body {
+    -webkit-text-fill-color: currentColor;
+    -webkit-text-stroke: 0.5px black;
+    padding: 0;
+    margin: 0;
+    font-family:
+      Roboto,
+      Inter,
+      -apple-system,
+      sans-serif;
+    @apply scroll-pt-[300px];
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .bg-gradient {
+    background: linear-gradient(90deg, #1991e1 0%, #8764fa 100%);
+  }
+  .no-outline {
+    -webkit-text-stroke: 0;
+  }
+}
